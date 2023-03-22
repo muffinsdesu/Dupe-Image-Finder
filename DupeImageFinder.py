@@ -8,9 +8,9 @@ root = tkinter.Tk()
 root.withdraw()
 
 # pick folders
-input("Press any key to pick the folder you want to search through.")
+input("Press Enter key to pick the folder you want to search through.")
 folder_path = filedialog.askdirectory()
-input("press any key and pick the output where the duplicate images will go.")
+input("press Enter key and pick the output where the duplicate images will go.")
 output_path = filedialog.askdirectory()
 
 def find_duplicate_images(folder_path):
@@ -55,7 +55,7 @@ def find_duplicate_images(folder_path):
     else:
         print(f"The dupes are: {dupes}\n They have been move successfully")
   
-  input("Finished. Press any key to close")  
+  input("Finished. Press Enter key to close")  
   
 # run the function
 find_duplicate_images(folder_path)
